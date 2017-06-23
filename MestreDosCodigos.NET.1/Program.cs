@@ -17,9 +17,9 @@ namespace MestreDosCodigos.NET._1
             double @double = 1.0;
             decimal @decimal = 1m;
 
-            ///Cast implícito
-            ///Nenhuma sintaxe especial é necessaária, pois é uma conversão segura.
-            ///Em todos os casos abaixo objeto destino é capaz de armazenar qualquer do objeto de origem
+            // Cast implícito
+            // Nenhuma sintaxe especial é necessária, pois é uma conversão segura.
+            // Em todos os casos abaixo objeto destino é capaz de armazenar qualquer valor do objeto de origem.
             @int = @short;
             @int = @byte;
             @uint = @byte;
@@ -49,8 +49,14 @@ namespace MestreDosCodigos.NET._1
             @decimal = @long;
             @decimal = @ulong;
 
-            ///Cast explícito
-            ///
+            // Cast explícito
+            // ´´E necessa´´rio especificar o tipo de destino
+            // Essas convers~~oes podem causar perda de precis~~ao ou valor e lançar exceç~~ao.
+            @int = (int) @decimal;
+            @long = (long) @double;
+            @float = (float) @decimal;
+            @ulong = (ulong) @int;
+            @short = (short) @int;
 
             WriteLine("Hello World!");
         }
