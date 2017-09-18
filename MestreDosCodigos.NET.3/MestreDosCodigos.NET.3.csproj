@@ -5,6 +5,10 @@
     <UserSecretsId>aspnet-MestreDosCodigos.NET._3-E5571151-C7F1-4F29-88BA-BB1C7EBBFA84</UserSecretsId>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
   <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>

@@ -8,7 +8,7 @@ namespace MestreDosCodigos.NET._3.Consumidor
 {
     class Program
     {
-        private static readonly string Url = @"http://localhost:54115/api/values";
+        private const string Url = @"http://localhost:54115/api/values";
 
         private static async Task<T> RetrieveAsync<T>(string url)
         {
@@ -23,15 +23,11 @@ namespace MestreDosCodigos.NET._3.Consumidor
             return serializer.Deserialize<T>(new JsonTextReader(new StringReader(content)));
         }
 
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            var url = Url;
+            Console.WriteLine(Url);
 
-            Console.WriteLine(url);
-
-            var values = RetrieveAsync<string[]>(url)
-                .GetAwaiter()
-                .GetResult();
+            var values = await RetrieveAsync<string[]>(Url);
 
             foreach (var value in values)
                 Console.WriteLine(value);
