@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MestreDosCodigos.NET.10", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MestreDosCodigos.NET.11", "MestreDosCodigos.NET.11\MestreDosCodigos.NET.11.csproj", "{BBFDDCB6-6EFE-44F0-B7D2-4C3B465EA743}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MestreDosCodigos.NET.12", "MestreDosCodigos.NET.12\MestreDosCodigos.NET.12.csproj", "{1AAC3A9A-7CB1-4B1B-AC06-91BBF80F9BDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{BBFDDCB6-6EFE-44F0-B7D2-4C3B465EA743}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBFDDCB6-6EFE-44F0-B7D2-4C3B465EA743}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBFDDCB6-6EFE-44F0-B7D2-4C3B465EA743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AAC3A9A-7CB1-4B1B-AC06-91BBF80F9BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AAC3A9A-7CB1-4B1B-AC06-91BBF80F9BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AAC3A9A-7CB1-4B1B-AC06-91BBF80F9BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AAC3A9A-7CB1-4B1B-AC06-91BBF80F9BDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
