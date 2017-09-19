@@ -10,7 +10,8 @@ namespace MestreDosCodigos.NET._8
     {
         private readonly IDictionary<ulong, Item> _itens = new ConcurrentDictionary<ulong, Item>();
 
-        public event EventHandler<decimal> DescontoGeralAlterado;
+        public delegate void DescontoGeralAlteradoEventHandler(object sender, decimal desconto);
+        public event DescontoGeralAlteradoEventHandler DescontoGeralAlterado;
 
         public decimal ValorBruto => _itens.Values.AsParallel().Sum(i => i.ValorBrutoTotal);
         public decimal ValorLiquido => _itens.Values.AsParallel().Sum(i => i.ValorLiquidoTotal);
