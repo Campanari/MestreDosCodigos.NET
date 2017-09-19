@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MestreDosCodigos.NET.9", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MestreDosCodigos.NET.10", "MestreDosCodigos.NET.10\MestreDosCodigos.NET.10.csproj", "{759ED276-78FD-4424-BB58-8D7A6332BEA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MestreDosCodigos.NET.11", "MestreDosCodigos.NET.11\MestreDosCodigos.NET.11.csproj", "{BBFDDCB6-6EFE-44F0-B7D2-4C3B465EA743}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{759ED276-78FD-4424-BB58-8D7A6332BEA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{759ED276-78FD-4424-BB58-8D7A6332BEA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{759ED276-78FD-4424-BB58-8D7A6332BEA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBFDDCB6-6EFE-44F0-B7D2-4C3B465EA743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBFDDCB6-6EFE-44F0-B7D2-4C3B465EA743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBFDDCB6-6EFE-44F0-B7D2-4C3B465EA743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBFDDCB6-6EFE-44F0-B7D2-4C3B465EA743}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
