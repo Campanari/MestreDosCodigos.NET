@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace MestreDosCodigos.NET._11
 {
@@ -16,8 +16,6 @@ namespace MestreDosCodigos.NET._11
 
             using (var contexto = new Contexto(Connection))
             {
-                contexto.Database.Log = s => Console.WriteLine($"{DateTime.Now} {s}");
-
                 if (!await contexto.Pedidos.AnyAsync())
                     contexto.Pedidos.Add(
                         new PedidoTabela
@@ -31,9 +29,7 @@ namespace MestreDosCodigos.NET._11
                         });
 
                 Console.WriteLine($"{DateTime.Now} Eager loading!");
-
-                contexto.Configuration.LazyLoadingEnabled = false;
-
+                
                 var pedidoEager = await contexto.Pedidos
                     .Include(pedido => pedido.Itens)
                     .FirstAsync();
@@ -48,13 +44,13 @@ namespace MestreDosCodigos.NET._11
                     .LoadAsync();
 
                 Console.WriteLine($"{DateTime.Now} Lazy loading!");
-
-                contexto.Configuration.LazyLoadingEnabled = true;
-
+                
                 var pedidoLazy = await contexto.Pedidos
                     .FirstAsync();
 
-                var itensLazy = pedidoLazy.Itens.ToList();
+                //var itensLazy = pedidoLazy.Itens.ToList();
+
+                Console.WriteLine($"{DateTime.Now} Lazy loading is not supported yet!");
             }
             
             Console.WriteLine($"{DateTime.Now} Finalizado!");

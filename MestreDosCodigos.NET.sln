@@ -17,17 +17,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos.NET.5", "M
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos.NET.6", "MestreDosCodigos.NET.6\MestreDosCodigos.NET.6.csproj", "{9BA796EA-6544-4F63-86BA-3E434D13F7AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MestreDosCodigos.NET.7", "MestreDosCodigos.NET.7\MestreDosCodigos.NET.7.csproj", "{7039E947-F64F-4850-B984-8BF493D1BAAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos.NET.7", "MestreDosCodigos.NET.7\MestreDosCodigos.NET.7.csproj", "{7039E947-F64F-4850-B984-8BF493D1BAAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MestreDosCodigos.NET.8", "MestreDosCodigos.NET.8\MestreDosCodigos.NET.8.csproj", "{F2697E73-AEFC-4B63-8C50-E536EFA167B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos.NET.8", "MestreDosCodigos.NET.8\MestreDosCodigos.NET.8.csproj", "{F2697E73-AEFC-4B63-8C50-E536EFA167B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MestreDosCodigos.NET.9", "MestreDosCodigos.NET.9\MestreDosCodigos.NET.9.csproj", "{5BC85B89-661C-4D7C-B407-A8E30EB77743}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos.NET.9", "MestreDosCodigos.NET.9\MestreDosCodigos.NET.9.csproj", "{5BC85B89-661C-4D7C-B407-A8E30EB77743}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MestreDosCodigos.NET.10", "MestreDosCodigos.NET.10\MestreDosCodigos.NET.10.csproj", "{759ED276-78FD-4424-BB58-8D7A6332BEA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos.NET.10", "MestreDosCodigos.NET.10\MestreDosCodigos.NET.10.csproj", "{759ED276-78FD-4424-BB58-8D7A6332BEA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MestreDosCodigos.NET.11", "MestreDosCodigos.NET.11\MestreDosCodigos.NET.11.csproj", "{BBFDDCB6-6EFE-44F0-B7D2-4C3B465EA743}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos.NET.11", "MestreDosCodigos.NET.11\MestreDosCodigos.NET.11.csproj", "{BBFDDCB6-6EFE-44F0-B7D2-4C3B465EA743}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MestreDosCodigos.NET.12", "MestreDosCodigos.NET.12\MestreDosCodigos.NET.12.csproj", "{1AAC3A9A-7CB1-4B1B-AC06-91BBF80F9BDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos.NET.12", "MestreDosCodigos.NET.12\MestreDosCodigos.NET.12.csproj", "{1AAC3A9A-7CB1-4B1B-AC06-91BBF80F9BDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MestreDosCodigos.NET.13", "MestreDosCodigos.NET.13\MestreDosCodigos.NET.13.csproj", "{DAAF38F4-6029-48EF-AF87-F750B2D8BBBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{1AAC3A9A-7CB1-4B1B-AC06-91BBF80F9BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AAC3A9A-7CB1-4B1B-AC06-91BBF80F9BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AAC3A9A-7CB1-4B1B-AC06-91BBF80F9BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAAF38F4-6029-48EF-AF87-F750B2D8BBBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAAF38F4-6029-48EF-AF87-F750B2D8BBBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAAF38F4-6029-48EF-AF87-F750B2D8BBBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAAF38F4-6029-48EF-AF87-F750B2D8BBBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
