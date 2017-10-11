@@ -8,7 +8,7 @@ namespace MestreDosCodigos.NET._3.Consumidor
 {
     class Program
     {
-        private const string Url = @"http://localhost:54115/api/values";
+        private const string Url = @"http://localhost:5000/api/values";
 
         private static async Task<T> RetrieveAsync<T>(string url)
         {
