@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+using System;
+using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
+using System.Xml;
 using System.Xml.Serialization;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
 
 namespace MestreDosCodigos.NET._13
 {
@@ -13,7 +14,7 @@ namespace MestreDosCodigos.NET._13
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Tarefa 13 - Iniciando Pedido!");
 
             var pedido = new Pedido(10ul);
 
@@ -29,15 +30,42 @@ namespace MestreDosCodigos.NET._13
                 TypeNameHandling = TypeNameHandling.All
             };
 
-            var pedidoSerializadoJson = JsonConvert.SerializeObject(pedido, pedido.GetType(), settings);
+            Console.WriteLine("Tarefa 13 - Pedido Finalizado!");
 
-            var pedidoDeserializadoJson = JsonConvert.DeserializeObject<Pedido>(pedidoSerializadoJson, settings);
-
-            Console.WriteLine(pedidoSerializadoJson);
-
-            var xmlSerializer = new XmlSerializer(typeof(Pedido));
-            xmlSerializer.Serialize(Console.Error, pedido);
+            Console.WriteLine("Tarefa 13 - Serializando pedido em json!");
             
+            var pedidoJsonFile = Path.GetTempFileName();
+            
+            File.WriteAllText(pedidoJsonFile, JsonConvert.SerializeObject(pedido, pedido.GetType(), settings));
+
+            Console.WriteLine("Tarefa 13 - Pedido salvo em {0}", pedidoJsonFile);
+            
+            var pedidoDeserializadoJson = JsonConvert.DeserializeObject<Pedido>(File.ReadAllText(pedidoJsonFile), settings);
+
+            Console.WriteLine("Tarefa 13 - Pedido em json deserializado!");
+
+            Console.WriteLine("Tarefa 13 - Pedido itens: {0}!", pedidoDeserializadoJson.Itens.Count);
+
+            Console.WriteLine("Tarefa 13 - Serializando pedido em xml!");
+
+            var pedidoXmlFile = Path.GetTempFileName();
+            
+            var xmlSerializer = new XmlSerializer(typeof(Pedido));
+
+            using (var pedidoXmlStream = new XmlTextWriter(pedidoXmlFile, Encoding.Default))
+                xmlSerializer.Serialize(pedidoXmlStream, pedido);
+
+            Console.WriteLine("Tarefa 13 - Pedido salvo em {0}", pedidoXmlFile);
+
+            var pedidoDeserializadoXml = default(Pedido);
+
+            using (var pedidoXmlStream = new XmlTextReader(pedidoXmlFile))
+                pedidoDeserializadoXml = (Pedido)xmlSerializer.Deserialize(pedidoXmlStream);
+
+            Console.WriteLine("Tarefa 13 - Pedido em xml deserializado!");
+
+            Console.WriteLine("Tarefa 13 - Pedido itens: {0}!", pedidoDeserializadoXml.Itens.Count);
+
             Console.ReadKey();
         }
 
@@ -56,39 +84,6 @@ namespace MestreDosCodigos.NET._13
 
                 return prop;
             }
-        }
-
-        public class Pedido
-        {
-            public Pedido(ulong id)
-            {
-                Id = id;
-                Itens = new Collection<Item>();
-            }
-
-            public Pedido()
-            {
-                
-            }
-
-            public ulong Id { get; set; }
-
-            public ICollection<Item> Itens { get; set; }
-        }
-
-        public class Item
-        {
-            public Item(ulong id)
-            {
-                Id = id;
-            }
-
-            public Item()
-            {
-
-            }
-
-            public ulong Id { get; set; }
         }
     }
 }
