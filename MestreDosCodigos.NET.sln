@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos.NET.1", "MestreDosCodigos.NET.1\MestreDosCodigos.NET.1.csproj", "{E1B8A67B-B57E-44C4-8576-A304A53B4ED0}"
 EndProject
@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos.NET.11", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos.NET.12", "MestreDosCodigos.NET.12\MestreDosCodigos.NET.12.csproj", "{1AAC3A9A-7CB1-4B1B-AC06-91BBF80F9BDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MestreDosCodigos.NET.13", "MestreDosCodigos.NET.13\MestreDosCodigos.NET.13.csproj", "{DAAF38F4-6029-48EF-AF87-F750B2D8BBBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos.NET.13", "MestreDosCodigos.NET.13\MestreDosCodigos.NET.13.csproj", "{DAAF38F4-6029-48EF-AF87-F750B2D8BBBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MestreDosCodigos.NET.14", "MestreDosCodigos.NET.14\MestreDosCodigos.NET.14.csproj", "{79483F7C-5E3D-49AE-8357-299FEB21A869}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{DAAF38F4-6029-48EF-AF87-F750B2D8BBBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAAF38F4-6029-48EF-AF87-F750B2D8BBBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAAF38F4-6029-48EF-AF87-F750B2D8BBBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79483F7C-5E3D-49AE-8357-299FEB21A869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79483F7C-5E3D-49AE-8357-299FEB21A869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79483F7C-5E3D-49AE-8357-299FEB21A869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79483F7C-5E3D-49AE-8357-299FEB21A869}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
