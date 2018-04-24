@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  mestredoscodigos.net.3:
+    image: mestredoscodigosnet3
+    build:
+      context: .
+      dockerfile: MestreDosCodigos.NET.3\Dockerfile

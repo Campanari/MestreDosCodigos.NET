@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.IO;
+using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -25,9 +26,11 @@ namespace MestreDosCodigos.NET._3.Consumidor
 
         static async Task Main(string[] args)
         {
-            Console.WriteLine(Url);
+            var url = args.FirstOrDefault() ?? Url;
 
-            var values = await RetrieveAsync<string[]>(Url);
+            Console.WriteLine(url);
+
+            var values = await RetrieveAsync<string[]>(url);
 
             foreach (var value in values)
                 Console.WriteLine(value);
